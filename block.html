@@ -442,7 +442,8 @@ p{text-wrap:pretty}
 
 /* ============ Фильтры и поиск в перечне ============ */
 .tt__row{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
-.tt__flabel{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding-top:11px;min-width:104px}
+.tt__flabel{width:100%;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:9px}
+.tt__search{min-width:320px;flex:1 1 320px}
 .tt__note{background:var(--accent-soft);border:1px solid #C9DDFF;border-radius:14px;padding:12px 16px;font-size:14px;color:var(--ink-2);margin-bottom:18px;line-height:1.5}
 .tt__note b{color:var(--blue)}
 .tt__hints{font-size:13.5px;color:var(--muted);margin:-6px 0 18px;line-height:2}
@@ -464,8 +465,8 @@ p{text-wrap:pretty}
 .tt__empty-a{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
 @media (max-width:900px){
-  .tt__flabel{min-width:0;padding-top:0;width:100%}
   .tt__row{gap:8px}
+  .tt__search{min-width:0}
   .hero__tumors .chip{padding:7px 12px;font-size:12.5px}
   .hero__pick-lbl{font-size:12.5px}
   .tt__empty{padding:28px 14px}
