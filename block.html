@@ -452,6 +452,7 @@ p{text-wrap:pretty}
 .tt__hint:hover{background:var(--blue);border-color:var(--blue);color:#fff}
 
 /* ============ Гены в строке таблицы ============ */
+.tt__napr{margin-top:20px}
 .tt__genes{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
 .gene{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--ink-2);background:#F1F5FB;border:1px solid var(--line-soft);border-radius:6px;padding:2px 7px;white-space:nowrap}
 .gene--hit{background:var(--blue);border-color:var(--blue);color:#fff}
@@ -482,9 +483,9 @@ p{text-wrap:pretty}
     </a>
     <nav class="nav">
       <a href="#tests">Исследования</a>
+      <a href="#napr">Направление</a>
       <a href="#check">Доступно ли вам</a>
       <a href="#how">Как это работает</a>
-      <a href="#napr">Направление</a>
       <a href="#docs">Документы</a>
       <a href="#faq">Вопросы</a>
     </nav>
@@ -653,53 +654,6 @@ p{text-wrap:pretty}
   <div class="tape__track" id="tape"></div>
 </div>
 
-<!-- ================= PRINCIPLES ================= -->
-<section class="principles">
-  <div class="wrap">
-    <div class="section-eyebrow">Что важно понимать заранее</div>
-    <h2 class="reveal">Как устроено <em>исследование по ОМС</em></h2>
-    <div class="principles__grid">
-      <div class="principle reveal">
-        <div class="principle__ic">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
-        </div>
-        <h3>Исследование оплачивает фонд ОМС</h3>
-        <p>С пациентом договор не заключается и не подписывается: в системе ОМС действует
-        трёхсторонний договор между лабораторией, страховой компанией и территориальным фондом.
-        Доплачивать за исследование, которое входит в перечень по ОМС, не нужно.</p>
-      </div>
-      <div class="principle reveal">
-        <div class="principle__ic">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
-        </div>
-        <h3>Направление выдаёт врач-онколог</h3>
-        <p>Направления на молекулярно-генетические исследования принимаются только от
-        врача-онколога. Допускается заверение направления заведующим или главным врачом ЦАОП.
-        Диагноз в направлении должен относиться к кодам МКБ&nbsp;C00—C97, D00—D09 или D45—D47.</p>
-      </div>
-      <div class="principle reveal">
-        <div class="principle__ic">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-        </div>
-        <h3>Зачастую дополнительная биопсия не требуется</h3>
-        <p>Для большинства исследований используют парафиновые блоки и стёкла, которые остаются
-        после биопсии или операции. Их выдают в патологоанатомическом отделении больницы,
-        где проводили вмешательство. Для диагностики наследственных форм рака биоматериалом
-        может быть кровь.</p>
-      </div>
-      <div class="principle reveal">
-        <div class="principle__ic">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect width="8" height="4" x="8" y="2" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
-        </div>
-        <h3>Заключение помогает выбрать тактику лечения</h3>
-        <p>Исследование показывает, есть ли в опухоли изменения, от которых зависит выбор терапии:
-        подойдёт ли таргетный препарат или иммунотерапия. Заключение служит онкологу основанием
-        для выбора дальнейшей тактики ведения пациента.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= TESTS ================= -->
 <section class="block" id="tests">
   <div class="wrap">
@@ -755,93 +709,10 @@ p{text-wrap:pretty}
       <div class="tt__count mono" id="ttCount"></div>
       <p class="tt__foot">Сроки указаны в рабочих днях и отсчитываются от поступления
       материала в лабораторию. Итоговый перечень исследований и материал определяет лечащий врач.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= QUIZ ================= -->
-<section class="block" id="check" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="section-eyebrow">Соответствие условиям ОМС</div>
-      <h2>Четыре вопроса — и станет понятно, <em>доступно ли вам исследование</em></h2>
-      <p>Чаще всего исследование не может быть выполнено не из-за самого диагноза, а из-за деталей
-      в оформлении направления. Ответьте на несколько вопросов — подскажем, что делать дальше
-      в вашей ситуации. Это ознакомительная проверка, а не диагностика и не запись на приём.</p>
-    </div>
-
-    <div class="quiz reveal" id="quiz">
-      <div class="quiz__head">
-        <div class="quiz__steps">Вопрос <b id="qNow">1</b> / 4</div>
-        <div class="quiz__tag">проверка условий</div>
-      </div>
-      <div class="quiz__bar"><div class="quiz__bar-fill" id="qBar"></div></div>
-      <div class="quiz__body" id="qBody"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FLOW ================= -->
-<section class="block" id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="section-eyebrow">Как это работает</div>
-      <h2>Пять шагов от кабинета онколога <em>до результата</em></h2>
-      <p>Срок зависит от вида исследования и занимает от нескольких дней до месяца. Самое важное —
-      первые два шага: если направление оформлено верно и материал на руках, дальнейшее
-      проходит быстро.</p>
-    </div>
-    <div class="flow reveal">
-      <div class="flow__node">
-        <div class="flow__icon"><span class="flow__step-num">1</span>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
-        </div>
-        <div class="flow__label">Онколог назначает исследование</div>
-        <div class="flow__sub">Врач определяет, какое исследование требуется для подбора терапии, и выписывает направление 057/у.</div>
-      </div>
-      <div class="flow__node">
-        <div class="flow__icon"><span class="flow__step-num">2</span>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-        </div>
-        <div class="flow__label">Проверяем направление</div>
-        <div class="flow__sub">Пришлите скан или фото в хорошем качестве. Ответим, всё ли заполнено правильно, до вашего визита.</div>
-      </div>
-      <div class="flow__node">
-        <div class="flow__icon"><span class="flow__step-num">3</span>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-        </div>
-        <div class="flow__label">Готовите биоматериал</div>
-        <div class="flow__sub">Блоки и стёкла забирают в патологоанатомическом отделении больницы, где делали биопсию или операцию. Для части исследований нужна кровь — её сдают у нас.</div>
-      </div>
-      <div class="flow__node">
-        <div class="flow__icon"><span class="flow__step-num">4</span>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div class="flow__label">Приезжаете в медицинский офис</div>
-        <div class="flow__sub">Администратор оформит заказ, примет документы и материал по акту с фотофиксацией.</div>
-      </div>
-      <div class="flow__node">
-        <div class="flow__icon"><span class="flow__step-num">5</span>
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
-        </div>
-        <div class="flow__label">Лаборатория и заключение</div>
-        <div class="flow__sub">От 5 до 30 рабочих дней в зависимости от метода. Результат обсуждаете с онкологом.</div>
-      </div>
-    </div>
-
-    <div style="margin-top:44px" class="reveal">
-      <div class="callout callout--info">
-        <div class="callout__ic">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        </div>
-        <div>
-          <h4>Второй шаг можно сделать, не выходя из дома</h4>
-          <p>Позвоните на горячую линию 8&nbsp;(495)&nbsp;660-83-77 и пришлите скан или фото направления в хорошем качестве. Специалист
-          передаст его на проверку и вернётся с ответом: либо всё в порядке и вас запишут на удобное время,
-          либо назовёт, что именно нужно исправить у лечащего врача. Так вы не потратите поездку впустую
-          и не потеряете дни из четырнадцати, отведённых на доставку материала.</p>
-        </div>
-      </div>
+      <a class="btn btn--ghost tt__napr" href="#napr">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
+        <span>Пример правильно заполненного направления 057/у</span>
+      </a>
     </div>
   </div>
 </section>
@@ -1041,8 +912,142 @@ p{text-wrap:pretty}
   </div>
 </section>
 
+<!-- ================= QUIZ ================= -->
+<section class="block" id="check">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Соответствие условиям ОМС</div>
+      <h2>Четыре вопроса — и станет понятно, <em>доступно ли вам исследование</em></h2>
+      <p>Чаще всего исследование не может быть выполнено не из-за самого диагноза, а из-за деталей
+      в оформлении направления. Ответьте на несколько вопросов — подскажем, что делать дальше
+      в вашей ситуации. Это ознакомительная проверка, а не диагностика и не запись на приём.</p>
+    </div>
+
+    <div class="quiz reveal" id="quiz">
+      <div class="quiz__head">
+        <div class="quiz__steps">Вопрос <b id="qNow">1</b> / 4</div>
+        <div class="quiz__tag">проверка условий</div>
+      </div>
+      <div class="quiz__bar"><div class="quiz__bar-fill" id="qBar"></div></div>
+      <div class="quiz__body" id="qBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRINCIPLES ================= -->
+<section class="principles">
+  <div class="wrap">
+    <div class="section-eyebrow">Что важно понимать заранее</div>
+    <h2 class="reveal">Как устроено <em>исследование по ОМС</em></h2>
+    <div class="principles__grid">
+      <div class="principle reveal">
+        <div class="principle__ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+        </div>
+        <h3>Исследование оплачивает фонд ОМС</h3>
+        <p>С пациентом договор не заключается и не подписывается: в системе ОМС действует
+        трёхсторонний договор между лабораторией, страховой компанией и территориальным фондом.
+        Доплачивать за исследование, которое входит в перечень по ОМС, не нужно.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="principle__ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+        </div>
+        <h3>Направление выдаёт врач-онколог</h3>
+        <p>Направления на молекулярно-генетические исследования принимаются только от
+        врача-онколога. Допускается заверение направления заведующим или главным врачом ЦАОП.
+        Диагноз в направлении должен относиться к кодам МКБ&nbsp;C00—C97, D00—D09 или D45—D47.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="principle__ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+        </div>
+        <h3>Зачастую дополнительная биопсия не требуется</h3>
+        <p>Для большинства исследований используют парафиновые блоки и стёкла, которые остаются
+        после биопсии или операции. Их выдают в патологоанатомическом отделении больницы,
+        где проводили вмешательство. Для диагностики наследственных форм рака биоматериалом
+        может быть кровь.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="principle__ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect width="8" height="4" x="8" y="2" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
+        </div>
+        <h3>Заключение помогает выбрать тактику лечения</h3>
+        <p>Исследование показывает, есть ли в опухоли изменения, от которых зависит выбор терапии:
+        подойдёт ли таргетный препарат или иммунотерапия. Заключение служит онкологу основанием
+        для выбора дальнейшей тактики ведения пациента.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLOW ================= -->
+<section class="block" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Как это работает</div>
+      <h2>Пять шагов от кабинета онколога <em>до результата</em></h2>
+      <p>Срок зависит от вида исследования и занимает от нескольких дней до месяца. Самое важное —
+      первые два шага: если направление оформлено верно и материал на руках, дальнейшее
+      проходит быстро.</p>
+    </div>
+    <div class="flow reveal">
+      <div class="flow__node">
+        <div class="flow__icon"><span class="flow__step-num">1</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+        </div>
+        <div class="flow__label">Онколог назначает исследование</div>
+        <div class="flow__sub">Врач определяет, какое исследование требуется для подбора терапии, и выписывает направление 057/у.</div>
+      </div>
+      <div class="flow__node">
+        <div class="flow__icon"><span class="flow__step-num">2</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+        </div>
+        <div class="flow__label">Проверяем направление</div>
+        <div class="flow__sub">Пришлите скан или фото в хорошем качестве. Ответим, всё ли заполнено правильно, до вашего визита.</div>
+      </div>
+      <div class="flow__node">
+        <div class="flow__icon"><span class="flow__step-num">3</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+        </div>
+        <div class="flow__label">Готовите биоматериал</div>
+        <div class="flow__sub">Блоки и стёкла забирают в патологоанатомическом отделении больницы, где делали биопсию или операцию. Для части исследований нужна кровь — её сдают у нас.</div>
+      </div>
+      <div class="flow__node">
+        <div class="flow__icon"><span class="flow__step-num">4</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="flow__label">Приезжаете в медицинский офис</div>
+        <div class="flow__sub">Администратор оформит заказ, примет документы и материал по акту с фотофиксацией.</div>
+      </div>
+      <div class="flow__node">
+        <div class="flow__icon"><span class="flow__step-num">5</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
+        </div>
+        <div class="flow__label">Лаборатория и заключение</div>
+        <div class="flow__sub">От 5 до 30 рабочих дней в зависимости от метода. Результат обсуждаете с онкологом.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:44px" class="reveal">
+      <div class="callout callout--info">
+        <div class="callout__ic">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        </div>
+        <div>
+          <h4>Второй шаг можно сделать, не выходя из дома</h4>
+          <p>Позвоните на горячую линию 8&nbsp;(495)&nbsp;660-83-77 и пришлите скан или фото направления в хорошем качестве. Специалист
+          передаст его на проверку и вернётся с ответом: либо всё в порядке и вас запишут на удобное время,
+          либо назовёт, что именно нужно исправить у лечащего врача. Так вы не потратите поездку впустую
+          и не потеряете дни из четырнадцати, отведённых на доставку материала.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= DOCS ================= -->
-<section class="block" id="docs">
+<section class="block" id="docs" style="padding-top:0">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="section-eyebrow">Документы</div>
